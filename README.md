@@ -18,4 +18,8 @@ public void allGetNoParam() {}
 
 Через JoinPoint можно получить инфу о методе в котором сработал advice.  
 
+@AfterReturning перехватывает отработку целевого метода и может менять результат его работы.    
+@AfterReturning(pointcut = "execution(* getStudents())", returning = "students")  
+
+
 
