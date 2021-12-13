@@ -15,7 +15,7 @@ public class University {
     );
 
     public List<Student> getStudents() {
-        System.out.println("метод getStudents(): " + students);
+        System.out.println("метод getStudents():\n" + students);
         return students;
     }
 

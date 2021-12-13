@@ -21,5 +21,10 @@ public void allGetNoParam() {}
 @AfterReturning перехватывает отработку целевого метода и может менять результат его работы.    
 @AfterReturning(pointcut = "execution(* getStudents())", returning = "students")  
 
+@AfterThrowing может залоггировать, что-то обработать, но не позволяет отменить проброску эксепшена наверх  
+
+@Around д.сам вызывать целевой метод через ProceedingJoinPoint  
+позволяет обработать исключение  
+
 
 

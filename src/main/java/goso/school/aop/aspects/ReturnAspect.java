@@ -2,6 +2,7 @@ package goso.school.aop.aspects;
 
 import goso.school.aop.Student;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
@@ -17,4 +18,5 @@ public class ReturnAspect {
         students.get(0).setName("Mr. " + students.get(0).getName());
         students.get(0).setAvgBall(students.get(0).getAvgBall() + 0.5);
     }
+
 }

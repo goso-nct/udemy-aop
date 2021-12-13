@@ -10,5 +10,6 @@ public class TestUniversity {
         University un = context.getBean("university", University.class);
         List<Student> sts = un.getStudents();
         System.out.println(sts);
+        context.close();
     }
 }
