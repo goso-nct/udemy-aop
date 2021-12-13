@@ -9,4 +9,9 @@ public class UniLibrary extends AbstractLibrary {
     public void getBook() {
         System.out.println("Берем книгу из библиотеки Университета");
     }
+
+    @Override
+    public void getMagazine() {
+        System.out.println("Берем Журнал из библиотеки Университета");
+    }
 }
