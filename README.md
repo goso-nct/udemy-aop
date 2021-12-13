@@ -7,3 +7,11 @@ public void beforeGetBookAdvice() {
 Книга и Журнал  
 @Before("execution(public void get*())")  
 public void beforeGetAdvice() {
+
+execution(* *(..)) 
+- любой возвращаемый тип
+- любое имя метода
+- любое к-во параметров
+
+@Pointcut("execution(* get*())")  
+public void allGetNoParam() {} 
