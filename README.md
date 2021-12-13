@@ -14,4 +14,8 @@ execution(* *(..))
 - любое к-во параметров
 
 @Pointcut("execution(* get*())")  
-public void allGetNoParam() {} 
+public void allGetNoParam() {}  
+
+Через JoinPoint можно получить инфу о методе в котором сработал advice.  
+
+

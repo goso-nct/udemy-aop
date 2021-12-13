@@ -12,6 +12,6 @@ public class ExceptionHandlingAspect {
 
     @Before("goso.school.aop.aspects.Pointcuts.allGetNoParam()")
     public void beforeGetExceptionHandling() {
-        System.out.println("30 (beforeGetExceptionHandling) Обработка эксепшена при попытки взятия");
+        System.out.println("(beforeGetExceptionHandling) Обработка эксепшена при попытки взятия");
     }
 }

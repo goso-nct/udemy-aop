@@ -12,6 +12,6 @@ public class SecurityAspect {
 
     @Before("goso.school.aop.aspects.Pointcuts.allGetNoParam()")
     public void beforeGetSecurityAdvice() {
-        System.out.println("20 (beforeGetSecurityAdvice) Проверка возможности взять предмет.");
+        System.out.println("(beforeGetSecurityAdvice) Проверка возможности взять предмет.");
     }
 }
