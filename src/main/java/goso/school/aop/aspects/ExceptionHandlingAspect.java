@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-@Order(20)
-public class SecurityAspect {
+@Order(30)
+public class ExceptionHandlingAspect {
 
     @Before("goso.school.aop.aspects.Pointcuts.allGetNoParam()")
-    public void beforeGetSecurityAdvice() {
-        System.out.println("20 (beforeGetSecurityAdvice) Проверка возможности взять предмет.");
+    public void beforeGetExceptionHandling() {
+        System.out.println("30 (beforeGetExceptionHandling) Обработка эксепшена при попытки взятия");
     }
 }
